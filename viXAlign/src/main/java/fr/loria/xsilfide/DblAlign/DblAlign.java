@@ -10,7 +10,7 @@
 
 package fr.loria.xsilfide.DblAlign;
 
-import fr.loria.nguyen.mytools.*;
+import vn.hus.mim.huyen.FileIO;
 
 //import java.util.Properties;
 //import java.util.Hashtable;

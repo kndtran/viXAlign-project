@@ -12,7 +12,7 @@ import java.util.Vector;
  *          chooser.setMyFileFilter(filter);
  *          chooser.showOpenDialog(parent);
  * Copyright :    Copyright (c) 2002 by Viet Commando
- * Société :
+ * SociÃ©tÃ© :
  * @author: vncommando@yahoo.com
  * @version 1.0
  */

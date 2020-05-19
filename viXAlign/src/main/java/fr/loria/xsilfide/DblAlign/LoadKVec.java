@@ -11,16 +11,30 @@
 
 package fr.loria.xsilfide.DblAlign;
 
+import java.io.FileInputStream;
+import java.util.Hashtable;
+import java.util.Locale;
+import java.util.Properties;
+import java.util.Stack;
+import java.util.StringTokenizer;
+import java.util.Vector;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 // import 
-import org.xml.sax.*;
-import org.xml.sax.helpers.*;
+import org.xml.sax.Attributes;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.DefaultHandler;
+import org.xml.sax.helpers.XMLReaderFactory;
 
-import javax.xml.parsers.*;
-import org.w3c.dom.*;
-
-import java.io.*;
-import java.util.*;
-import fr.loria.nguyen.mytools.*;
+import vn.hus.mim.huyen.FileIO;
+import vn.hus.mim.huyen.XMLTools;
 
 /**
  * Load and prepared 2 texts.
@@ -205,7 +219,7 @@ public class LoadKVec {
 	}
 
 
-	// Methode qui initialise les Properties a partir du fichier entré en parametre   @Pat
+	// Methode qui initialise les Properties a partir du fichier entrï¿½ en parametre   @Pat
 	private final void initXMLProperties(String propFile) {
 		prop = new Properties();
 		try {
